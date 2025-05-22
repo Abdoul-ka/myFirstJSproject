@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detection de document falsifier</title>
+    <title>Détection de Documents Falsifiés</title>
+    <link rel="stylesheet" href="David.css">
 </head>
 <body>
-    
+    <header>
+        <h1>🛡️ Détecteur de Falsification de Documents</h1>
+        <p>Importez un document pour vérifier son authenticité.</p>
+    </header>
+
+    <main>
+        <form class="upload-form">
+            <label for="document">Choisir un document :</label>
+            <input type="file" id="document" name="document" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+            <button type="submit">Analyser</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ivoire Secure Docs - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
