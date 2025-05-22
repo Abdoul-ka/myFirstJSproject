@@ -1,18 +1,28 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
     background-color: #f4f7fa;
     color: #333;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#lottie-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 header {
@@ -30,8 +40,8 @@ header h1 {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
     max-width: 400px;
+    margin: auto;
     text-align: center;
 }
 
@@ -57,9 +67,8 @@ header h1 {
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 40px;
     text-align: center;
     font-size: 0.9em;
     color: #777;
-    padding-top: 20px;
 }
