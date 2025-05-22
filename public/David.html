@@ -2,8 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!--Empecher le zoom à 100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Détection de Documents Falsifiés</title>
     <link rel="stylesheet" href="David.css">
+     <!-- Lottie player -->
     <script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
 </head>
 <body>
@@ -19,11 +22,13 @@
             <input type="file" id="document" name="document" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
             <button type="submit">Analyser</button>
         </form>
+        <div id="resultat"></div>
     </main>
 
     <footer>
         <p>&copy; 2025 Ivoire Secure Docs - Tous droits réservés</p>
     </footer>
+      <!-- JavaScript Lottie -->
     <script src="David_script.js"></script>
 </body>
 </html>
